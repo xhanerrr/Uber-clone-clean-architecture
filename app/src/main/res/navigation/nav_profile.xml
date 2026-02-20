@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_profile"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.signinregister.ui.main.profile.fragments.ProfileHomeFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile_home"  >
+        <action
+            android:id="@+id/action_homeFragment_to_personalInfoFragment"
+            app:destination="@id/personalInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/personalInfoFragment"
+        android:name="com.example.signinregister.ui.main.profile.fragments.ProfilePersonalInfoFragment"
+        android:label="Información Personal"
+        tools:layout="@layout/fragment_profile_personal_info" >
+        <action
+            android:id="@+id/action_personalInfoFragment_to_securityFragment"
+            app:destination="@id/securityFragment" />
+
+        <action
+            android:id="@+id/action_personalInfoFragment_to_nameFragment"
+            app:destination="@id/nameFragment" />
+        <action
+            android:id="@+id/action_personalInfoFragment_to_phoneFragment"
+            app:destination="@id/phoneFragment" />
+        <action
+            android:id="@+id/action_personalInfoFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.example.signinregister.ui.main.profile.fragments.personalfragments.NameFragment"
+        android:label="Editar Nombre"
+        tools:layout="@layout/fragment_name" />
+
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.example.signinregister.ui.main.profile.fragments.personalfragments.PhoneFragment"
+        android:label="Editar Teléfono"
+        tools:layout="@layout/fragment_phone" />
+
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.example.signinregister.ui.main.profile.fragments.personalfragments.EmailFragment"
+        android:label="Editar Email"
+        tools:layout="@layout/fragment_email" />
+
+
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.example.signinregister.ui.main.profile.fragments.ProfileSecurityFragment"
+        android:label="Seguridad"
+        tools:layout="@layout/fragment_profile_security" >
+        <action
+            android:id="@+id/action_securityFragment_to_privacyDataFragment"
+            app:destination="@id/privacyDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/privacyDataFragment"
+        android:name="com.example.signinregister.ui.main.profile.fragments.ProfilePrivacyDataFragment"
+        android:label="Privacidad y Datos"
+        tools:layout="@layout/fragment_profile_privacy_data" />
+
+</navigation>

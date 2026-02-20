@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SignIn&amp;Register</string>
+    <string name="introduzca_su_password">Introduzca su password</string>
+    <string name="introduzca_su_correo">Introduzca su correo</string>
+
+    <string name="facebook_app_id">CENSURADO</string>
+    <string name="fb_login_protocol_scheme">CENSURADO</string>
+    <string name="facebook_client_token">CENSURADO</string>
+    <string name="google_maps_key">CENSURADO</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="login_error">Su correo o password son incorrectas</string>
+    <string name="google_login_error">"Error en Google login"</string>
+    <string name="facebook_login_error">Error en Facebook login</string>
+
+    <string name="register_error">Error en el registro</string>
+    <string name="google_register_error">Error en Google register</string>
+    <string name="facebook_register_error">Error en Facebook register</string>
+
+
+</resources>

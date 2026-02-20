@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/black"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_services"
+        android:iconTint="@color/black"
+        android:title="Buscar" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_activity"
+        android:iconTint="@color/black"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_account"
+        android:iconTint="@color/black"
+        android:title="Ajustes" />
+</menu>

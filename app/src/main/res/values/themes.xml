@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.SignInRegister" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.SignInRegister" parent="Base.Theme.SignInRegister" />
+
+    <style name="FullScreenBottomSheetDialog" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/BottomSheetStyle.App</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="BottomSheetStyle.App" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_fitToContents">false</item>
+    </style>
+
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_animated_logo_splash</item>
+        <item name="windowSplashScreenAnimationDuration">1500</item>
+        <item name="postSplashScreenTheme">@style/Theme.SignInRegister</item>
+    </style>
+
+    <style name="Base.Theme.SignInRegister." parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+
+        <item name="android:statusBarColor">@color/white</item>
+
+    </style>
+
+
+</resources>

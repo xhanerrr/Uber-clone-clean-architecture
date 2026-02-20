@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="tab_inactive">#808080</color>
+    <color name="blue">#303F9F</color>
+
+    <color name="gray_light">#A0A0A0</color>
+    <color name="gray_separator">#303030</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FF9800</color>
+
+    <color name="default_white_color">#FCF5FDFF</color>
+
+    <color name="yellow" >#FFBF00</color>
+</resources>

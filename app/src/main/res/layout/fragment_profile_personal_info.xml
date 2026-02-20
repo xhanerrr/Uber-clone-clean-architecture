@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.profile.fragments.ProfilePersonalInfoFragment">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Personal info"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frame_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <ImageView
+            android:id="@+id/iv_profile_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/defaultpfppic"
+            app:tint="#D0D0D0" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|end"
+            android:padding="6dp"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/black" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/separator_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/frame_avatar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_name"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/separator_avatar">
+
+        <TextView
+            android:id="@+id/tv_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            tools:text="Anthony Bujaico"
+            android:textColor="#606060"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/separator_name"
+            app:layout_constraintEnd_toStartOf="@id/iv_name_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_title" />
+
+        <ImageView
+            android:id="@+id/iv_name_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_rightarrow"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name_title"
+            app:tint="@color/black" />
+
+        <View
+            android:id="@+id/separator_name"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_gender"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/row_name">
+
+        <TextView
+            android:id="@+id/tv_gender_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_gender_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Add your gender"
+            android:textColor="#606060"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/separator_gender"
+            app:layout_constraintEnd_toStartOf="@id/iv_gender_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_gender_title" />
+
+        <ImageView
+            android:id="@+id/iv_gender_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_rightarrow"
+            app:layout_constraintBottom_toBottomOf="@id/tv_gender_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_gender_title"
+            app:layout_constraintVertical_bias="0.6"
+            app:tint="@color/black" />
+
+        <View
+            android:id="@+id/separator_gender"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_phone"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/row_gender">
+
+        <TextView
+            android:id="@+id/tv_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Phone number"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_phone_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            tools:text="+51910268783"
+            android:textColor="#606060"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/separator_phone"
+            app:layout_constraintEnd_toStartOf="@id/iv_phone_alert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_title" />
+
+        <ImageView
+            android:id="@+id/iv_phone_alert"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_phone_subtitle"
+            app:layout_constraintEnd_toStartOf="@id/iv_phone_arrow"
+            app:layout_constraintTop_toTopOf="@id/tv_phone_subtitle"
+            app:tint="#FF9800" />
+
+        <ImageView
+            android:id="@+id/iv_phone_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_rightarrow"
+            app:layout_constraintBottom_toBottomOf="@id/tv_phone_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_phone_title"
+            app:tint="@color/black" />
+
+        <View
+            android:id="@+id/separator_phone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_email"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/row_phone">
+
+        <TextView
+            android:id="@+id/tv_email_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_email_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            tools:text="xhaner.rr@gmail.com"
+            android:textColor="#606060"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/separator_email"
+            app:layout_constraintEnd_toStartOf="@id/iv_email_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_email_title" />
+
+        <ImageView
+            android:id="@+id/iv_email_check"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_email_subtitle"
+            app:layout_constraintEnd_toStartOf="@id/iv_email_arrow"
+            app:layout_constraintTop_toTopOf="@id/tv_email_subtitle"
+            app:tint="#4CAF50" />
+
+        <ImageView
+            android:id="@+id/iv_email_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_rightarrow"
+            app:layout_constraintBottom_toBottomOf="@id/tv_email_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_email_title"
+            app:tint="@color/black" />
+
+        <View
+            android:id="@+id/separator_email"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_language"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/row_email">
+
+        <TextView
+            android:id="@+id/tv_language_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Language"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_language_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Update device language"
+            android:textColor="#606060"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/separator_language"
+            app:layout_constraintEnd_toStartOf="@id/iv_language_external"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_language_title" />
+
+        <ImageView
+            android:id="@+id/iv_language_external"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_rightarrow"
+            app:layout_constraintBottom_toBottomOf="@id/tv_language_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_language_title"
+            app:layout_constraintVertical_bias="0.6"
+            app:tint="@color/black" />
+
+        <View
+            android:id="@+id/separator_language"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row_language" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
